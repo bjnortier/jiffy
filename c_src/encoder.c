@@ -358,7 +358,7 @@ enc_double(Encoder* e, double val)
     }
 
     //snprintf(&(e->p[e->i]), 31, "%0.20g", val);
-    sprintf(&(e->p[e->i]), "%.20g", val);
+    sprintf(&(e->p[e->i]), "%.6g", val);
     e->i += strlen(&(e->p[e->i]));
     e->count++;
 
